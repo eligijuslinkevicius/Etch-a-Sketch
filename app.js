@@ -35,7 +35,7 @@ function createDivs(pixelSize) {
 	}
 }
 
-document.addEventListener("mousemove", function (e) {
+document.addEventListener("click", function (e) {
 	const target = e.target.closest(".pixel");
 
 	if (target) {
