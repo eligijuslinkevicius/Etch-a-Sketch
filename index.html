@@ -8,6 +8,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Open+Sans:wght@500&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="./styles.css" />
+
 		<title>Etch-a-Sketch</title>
 	</head>
 	<body>
@@ -17,19 +18,17 @@
 			<div class="left-menu">
 				<input type="color" name="color" id="color-picker" />
 
-				<button class="option" autofocus>Color value</button>
-				<button class="option">Rainbow mode</button>
-				<button class="option">Eraser</button>
-				<button class="option">Clear</button>
+				<button class="option" id="erase" onclick="erase()">Eraser</button>
+				<button class="option" id="clear" onclick="createDivs()">Clear</button>
 
 				<div class="range-container">
-					<label id="size-label">1 x 1</label>
-					<input type="range" id="size-range" name="size" min="1" max="32" />
+					<label id="size-label"></label>
+					<input type="range" id="size-range" name="size" min="1" max="32" value="16" autofocus />
 				</div>
 			</div>
+
 			<div class="drawing-container"></div>
 		</div>
-
 		<script src="./app.js"></script>
 	</body>
 </html>
