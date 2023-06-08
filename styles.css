@@ -1,0 +1,90 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    background-color: #EED5B2;
+}
+
+h1 {
+    color: #E66159;
+    font-size: 3.5em;
+    font-family: 'Bagel Fat One', cursive;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#color-picker {
+    width: 75px;
+    height: 75px;
+    border: none;
+    border-radius: 50%;
+    background-color: #E66159;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+#color-picker::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+#color-picker::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+
+.option {
+    width: 175px;
+    height: 45px;
+    border-radius: 50px;
+    border: 1px solid #E66159;
+    background-color: transparent;
+    color: #E66159;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+.option:hover {
+    background-color: #E66159;
+    color: white;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.option:focus {
+    background-color: #E66159;
+    color: white;
+}
+
+.range-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    width: 100%;
+}
+
+#size-label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+#size-range {
+    width: 100%;
+    color: #E66159;
+}
